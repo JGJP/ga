@@ -1,6 +1,8 @@
 const clipboard = require('clipboardy');
 const tfa = require('node-2fa');
-const keys = require('./config');
+
+let keys;
+try { keys = require('./config'); } catch(e) {}
 
 let arg = require('arg')({
     '--manual': String,
