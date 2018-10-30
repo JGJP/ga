@@ -1,3 +1,3 @@
 module.exports = {
-    key: 'privatekey',
+    label: 'privatekey', // node app.js label
 }
